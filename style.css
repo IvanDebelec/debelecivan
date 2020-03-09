@@ -1,0 +1,289 @@
+.centriraj {
+    text-align: center;
+}
+
+.lijevo {
+    float: left;
+}
+
+.desno {
+    float: right;
+}
+
+.imgbox {
+  height: 200px;
+  width: 500px;
+}
+
+.column {
+  float: left;
+  width: 20%;
+  padding: 5px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+body {
+    background-color: #ffd11a;
+}
+
+p.down {
+    color: black;
+    font-size: 15px;
+    font-family: Raleway;
+    text-align: center;
+}
+
+p.normal {
+    color: rgb(219, 99, 99);
+    font-size: 30px;
+    font-family: Caveat;
+    text-align: center;
+}
+
+p.align {
+    text-align: center;
+}
+
+p.thicc {
+    color: rgb(219, 99, 99);
+    font-weight: bold;
+    text-align: center;
+}
+
+h1 {
+    color: rgb(219, 99, 99);
+    font-family: Caveat;
+    font-size: 100px;
+    margin-top: 45px;
+    letter-spacing: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+h3 {
+    color: rgb(219, 99, 99);
+    font-family: Caveat;
+    font-size: 35px;
+    margin-top: 60px;
+    letter-spacing: 5px;
+    font-weight: bold;
+}
+
+hr.short {
+    background-color:rgb(219, 99, 99);
+    height: 6px;
+    border-color: rgb(219, 99, 99);
+    border-radius: 100px;
+    margin-top: 60px;
+    text-align: center;
+}
+
+hr.long {
+    background-color:rgb(219, 99, 99);
+    width: 300px;
+    height: 6px;
+    border-color: rgb(219, 99, 99);
+    border-radius: 100px;
+    margin-top: 60px;
+    text-align: center;
+}
+
+form {
+    text-align: center;
+    margin-top: 20px;
+    opacity: 100% !important;
+}
+
+
+img {
+    width: 150px;
+    height: 125px;
+    display: block;
+    outline-style: solid;
+    outline-color: coral;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+label {
+    text-align: center;
+}
+
+input {
+    border-radius: 100px;
+    border-color: rgb(219, 99, 99);
+    opacity: 100%;
+}
+
+input.buttonInput {
+    border-radius: 100px;
+    border-color: rgb(0, 153, 51);
+    opacity: 100%;
+}
+
+button.opacity {
+    border-color: rgb(219, 99, 99);
+    opacity: 100%;
+}
+
+a.link {
+    text-align: center;
+}
+
+a {
+    text-align: center;
+}
+
+button {
+    border-radius: 100px;
+    text-align: center;
+    opacity: 100%;
+}
+
+@keyframes animacija {
+    0% {
+      transform: scale(0.1);
+      opacity: 0;
+    }
+    50% {
+      transform: scale(1.2);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+
+  @keyframes boje {
+
+    0% {
+      width: 100px;
+      background-color: rgb(219, 99, 99);
+      text-align: center;
+    }
+    50% {
+      width: 500px;
+      background-color: rgb(153, 33, 33);
+      text-align: center;
+    }
+    100% {
+      width: 100px;
+      background-color: rgb(219, 99, 99);
+      text-align: center;
+    }
+  }
+
+
+  div.animacija {
+    text-align: center;
+    animation-duration: 2s;
+    animation-name: animacija;
+  }
+
+  div.horizontala {
+      border-radius: 100px;
+      text-align: center;
+      animation-duration: 5s;
+      animation-name: boje;
+      animation-iteration-count: infinite;
+  }
+
+  .boxdrop {
+      width: 100px;
+      height: 100px;
+      text-align: center;
+  }
+
+/* Za navigacijsko okno */
+.navbar {
+    overflow: hidden;
+    background-color: rgb(219, 99, 99);
+    font-family: Arial;
+    border-radius: 100px;
+    text-align: center;
+  }
+  
+  /* Linkovi */
+  .navbar a {
+    float: center;
+    font-size: 16px;
+    color: rgb(146, 224, 122);
+    text-align: center;
+    padding: 20px 20px;
+    text-decoration: none;
+    text-align: center;
+  }
+  
+  /* drop container */
+  .dropdown {
+    float: center;
+    overflow: hidden;
+    text-align: center;
+  }
+  
+  /* gumb za drop*/
+  .dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 20px 20px;
+    background-color: inherit;
+    font-family: inherit; /* Za vertikalno - mobiteli */
+    margin: 0; /* Za vertikalno - mobiteli */
+    text-align: center;
+  }
+  
+  /* Add a red background color to navbar links on hover */
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: rgb(202, 53, 53);
+    text-align: center;
+  }
+  
+  /* Dropdown content (hidden by default) */
+  .dropdown-content {
+    display: none;
+    position: relative;
+    background-color: #f9f9f9;
+    min-width: 150px;
+    box-shadow: 0px 8px 16px 0px rgb(146, 224, 122);
+    z-index: 1;
+    text-align: center;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 20px 20px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+  }
+  
+  /* Add a grey background color to dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: rgb(146, 224, 122);
+    text-align: center;
+  }
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+    text-align: center;
+  }
+
+ 
+
+
+
+

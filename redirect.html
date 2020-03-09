@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html>
+
+<link rel="stylesheet" href="style.css"> 
+<script src = "javika.js" ></script>
+<script type = "text/javascript" src = "javika.js"></script>
+<link href='https://fonts.googleapis.com/css?family=Russo One' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Caveat' rel='stylesheet'>
+
+<body>
+
+<script>
+
+    
+
+    function redirekcija(){ 
+        var brojac = 0;
+        var interval = setInterval(function() {
+            brojac++;
+            console.log(brojac);
+            if (brojac == 4) {
+
+                var tajmer = setTimeout(function() {
+                    window.location = 'home.html';
+                }, 900); //5000 oznacava milisekunde koje su potrebne da se stranica ucita
+
+                
+
+            clearInterval(interval);
+        }
+    }, 1000);
+        
+
+}
+
+    function ispis() {
+        var brojilo = 0;
+        brojilo++;
+        var intervalko = setInterval(function() {
+        if (brojilo == 4) {
+            
+            var timer = setTimeout(function() {
+                console.log(brojilo);
+            }, 900);
+
+            clearInterval(intervalko);
+
+        }
+    }, 1000);
+
+}
+
+</script>
+
+<p class = "centriraj">Redirektiramo vas za: </p>
+<script>
+ispis();
+redirekcija();
+</script>
+
+
+</body>
+
+</html>
